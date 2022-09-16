@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#define MAX_STREAMING_RANGE 50
+
 void recieveDataFromConsole(char *recv_buff);
 void extractTempData(int* temp_buff, char* recv_buff);
 void extractSoCData(int* soc_buff, char* recv_buff);
