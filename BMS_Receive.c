@@ -10,13 +10,12 @@ void recieveDataFromConsole(char *recv_buff)
 
 	int reading=0;
 	char line[10]={0};
-	size_t lineSize = 10;
 	char *buff = recv_buff;
 
 	for(reading; reading < MAX_STREAMING_RANGE; reading++) 
 	{
 		scanf("%s",line);
-    strcpy(buff,line);
+    		strcpy(buff,line);
 		buff = strchr(recv_buff,0); 
 	}
 }
