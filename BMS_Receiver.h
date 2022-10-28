@@ -11,3 +11,4 @@ int getMaxSoC(int*);
 int getMinSoC(int*);
 void printSoCData(int* soc_buff);
 void printTempData(int* temp_buff);
+float calculateSimpleMovingAverageValue(int *inputBuffer,int sampleSize);
