@@ -25,10 +25,10 @@ void testMinSoC(void)
   assert(getMinSoC(dummy_SoC) == 5);
 }
 
-/*int main()
+int main()
 {
   testMaxTemp();
   testMinTemp();
   testMaxSoC();
   testMinSoC();
-}*/
+}
