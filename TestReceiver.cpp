@@ -37,7 +37,7 @@ int main()
 #include "test/catch.hpp"
 #include <vector>
 #include <iostream>
-#include "BMS_Receive.h"
+#include "BMS_Receiver.h"
 
 using namespace std;
 
