@@ -152,17 +152,17 @@ void printSoCData(int* soc_buff)
 
 float calculateSimpleMovingAverageValue(int *inputBuffer,int sampleSize)
 {
-    	float simpleMovingAverages;
-	
+    	float simpleMovingAverage;
+	int sum = 0;
 	int temp;
 	int sample = 0;
 
 	for(; sample < sampleSize ; sample++)
 	{
 	    temp = inputBuffer[sample];
-	    Sum = temp+Sum;
+	    sum = temp+sum;
 	}
 	
-	SimpleMovingAverage = Sum/sampleSize;
+	simpleMovingAverage = sum/sampleSize;
 	return simpleMovingAverage;
 }
