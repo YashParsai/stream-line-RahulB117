@@ -7,7 +7,6 @@
 void recieveDataFromConsole(char *recv_buff)
 
 {
-
 	int reading=0;
 	char line[10]={0};
 	char *buff = recv_buff;
@@ -67,7 +66,7 @@ int getMaxTemp(int* temp_buff)
 	int index;
 
 	for(index = 0; index < MAX_STREAMING_RANGE; index++)
-  {
+  	{
 		if(temp_max < temp_buff[index])
 		{
 			temp_max = temp_buff[index];
@@ -159,8 +158,8 @@ float calculateSimpleMovingAverageValue(int *inputBuffer,int sampleSize)
 
 	for(; sample < sampleSize ; sample++)
 	{
-	    temp = inputBuffer[sample];
-	    sum = temp+sum;
+		temp = inputBuffer[sample];
+	    	sum = temp+sum;
 	}
 	
 	simpleMovingAverage = sum/sampleSize;
