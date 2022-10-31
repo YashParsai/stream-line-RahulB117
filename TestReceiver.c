@@ -27,7 +27,7 @@ void testMinSoC(void)
 
 void testSMA(void)
 {
-  assert(calculateSimpleMovingAverageValue(dummy_temp, 5) == 77);
+  assert(calculateSimpleMovingAverageValue(dummy_temp, 5) == 15);
 }
 
 int main()
